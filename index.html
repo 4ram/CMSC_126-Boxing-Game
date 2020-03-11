@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      body{
+        background-color: DodgerBlue;
+        background-image: url("https://jhuynh85.github.io/Hangman-Game/assets/images/ring.jpg");
+        background-repeat: no-repeat;
+        background-size: 1366px 768px;
+      }
+      button {
+        background-color: gray;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+      }
+      .box {
+        text-align:center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: white;
+      }
+      h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        color: white;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Boxing Game</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1>BOXING GAME</h1>
+      <button type="button" id="toss" onclick="coinFlip()">Toss a Coin!</button><br>
+      <p id="printCoin"> </p>
+      <button type="button" id="punch" onclick="punch()" disabled>Punch</button>
+      <button type="button" id="defend" onclick="defend()" disabled>Block</button>
+      <p id="print"> </p>
+    </div>
+    <script src="boxer.js"></script>
+  </body>
+</html>
